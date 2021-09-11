@@ -11306,9 +11306,11 @@ fsevents@~2.3.2:
     gatsby-plugin-sharp: ^3.13.0
     gatsby-source-filesystem: ^3.13.0
     gatsby-transformer-sharp: ^3.13.0
+    prettier: ^2.4.0
     react: ^17.0.2
     react-dom: ^17.0.2
     react-helmet: ^6.1.0
+    typescript: ~4.3.5
   languageName: unknown
   linkType: soft
 
@@ -12792,7 +12794,7 @@ fsevents@~2.3.2:
   languageName: node
   linkType: hard
 
-"prettier@npm:^2.3.2":
+"prettier@npm:^2.3.2, prettier@npm:^2.4.0":
   version: 2.4.0
   resolution: "prettier@npm:2.4.0"
   bin:
@@ -15538,6 +15540,26 @@ resolve@^2.0.0-next.3:
   version: 0.0.6
   resolution: "typedarray@npm:0.0.6"
   checksum: 33b39f3d0e8463985eeaeeacc3cb2e28bc3dfaf2a5ed219628c0b629d5d7b810b0eb2165f9f607c34871d5daa92ba1dc69f49051cf7d578b4cbd26c340b9d1b1
+  languageName: node
+  linkType: hard
+
+"typescript@patch:typescript@~4.3.5#~builtin<compat/typescript>":
+  version: 4.3.5
+  resolution: "typescript@patch:typescript@npm%3A4.3.5#~builtin<compat/typescript>::version=4.3.5&hash=32657b"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: 4e2edec3c9b7b9a22ad9cbf9371339d9e13bfe44731f0e2d6a5287f991c3b0e3e0ac0c0ebbf9bf6fc2051e30559c789bfc9cf572cd6b836a0222ae141fac1dba
+  languageName: node
+  linkType: hard
+
+typescript@~4.3.5:
+  version: 4.3.5
+  resolution: "typescript@npm:4.3.5"
+  bin:
+    tsc: bin/tsc
+    tsserver: bin/tsserver
+  checksum: bab033b5e2b0790dd35b77fd005df976ef80b8d84fd2c6e63cc31808151875beae9216e5a315fe7068e8499905c3c354248fe83272cdfc13b7705635f0c66c97
   languageName: node
   linkType: hard
 
