@@ -1,4 +1,5 @@
-import * as React from 'react';
+/** @jsx jsx */
+import {css, jsx} from '@emotion/react';
 
 export default function IndexPage() {
   return (
