@@ -1,0 +1,19 @@
+node_modules/
+.cache/
+public
+
+# vscode history extension
+.history/
+
+# Yarn files
+.yarn/*
+!.yarn/releases
+!.yarn/plugins
+!.yarn/sdks
+!.yarn/versions
+.pnp.*
+
+#vscode
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
