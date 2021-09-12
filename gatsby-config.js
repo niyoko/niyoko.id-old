@@ -1,30 +1,37 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://niyoko.id",
-    title: "niyoko.id",
+    siteUrl: 'https://niyoko.id',
+    title: 'niyoko.id',
+    commentboxId: '5749180081373184-proj',
   },
   plugins: [
-    "gatsby-plugin-emotion",
-    "gatsby-plugin-image",
-    "gatsby-plugin-react-helmet",
-    "gatsby-plugin-mdx",
-    "gatsby-plugin-sharp",
-    "gatsby-transformer-sharp",
+    'gatsby-plugin-emotion',
+    'gatsby-plugin-image',
+    'gatsby-plugin-react-helmet',
+    'gatsby-plugin-mdx',
+    'gatsby-plugin-sharp',
+    'gatsby-transformer-sharp',
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: `gatsby-plugin-layout`,
       options: {
-        name: "images",
-        path: "./src/images/",
+        component: require.resolve(`./src/components/layout`),
       },
-      __key: "images",
     },
     {
-      resolve: "gatsby-source-filesystem",
+      resolve: 'gatsby-source-filesystem',
       options: {
-        name: "pages",
-        path: "./src/pages/",
+        name: 'images',
+        path: './src/images/',
       },
-      __key: "pages",
+      __key: 'images',
+    },
+    {
+      resolve: 'gatsby-source-filesystem',
+      options: {
+        name: 'pages',
+        path: './src/pages/',
+      },
+      __key: 'pages',
     },
   ],
 };
