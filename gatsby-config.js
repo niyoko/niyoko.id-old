@@ -3,6 +3,7 @@ module.exports = {
     siteUrl: 'https://niyoko.id',
     title: 'niyoko.id',
     commentboxId: '5749180081373184-proj',
+    commentboxIdDev: '5732563658211328-proj',
   },
   plugins: [
     'gatsby-plugin-emotion',

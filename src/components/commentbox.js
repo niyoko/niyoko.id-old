@@ -9,13 +9,18 @@ export default function Commentbox() {
     {
       site {
         siteMetadata {
+          commentboxIdDev
           commentboxId
         }
       }
     }
   `);
 
-  const commentboxId = data?.site?.siteMetadata?.commentboxId;
+  const commentboxId =
+    data?.site?.siteMetadata?.[
+      process.env.NODE_ENV === 'development' ? 'commentboxIdDev' : 'commentboxId'
+    ];
+
   useEffect(() => {
     if (commentboxId) {
       return commentBox(commentboxId);
