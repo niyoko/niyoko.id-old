@@ -18,7 +18,7 @@ export default function Commentbox() {
 
   const commentboxId =
     data?.site?.siteMetadata?.[
-      process.env.NODE_ENV === 'development' ? 'commentboxIdDev' : 'commentboxId'
+      process.env.SITE_ENV === 'production' ? 'commentboxId' : 'commentboxIdDev'
     ];
 
   useEffect(() => {
