@@ -29,7 +29,7 @@
     "@mui/system": "5.0.0-rc.1",
     "commentbox.io": "^2.1.0",
     "date-fns": "^2.23.0",
-    "gatsby": "^3.13.0",
+    "gatsby": "^4.25.7",
     "gatsby-plugin-emotion": "^6.13.0",
     "gatsby-plugin-image": "^1.13.0",
     "gatsby-plugin-layout": "^2.13.0",
